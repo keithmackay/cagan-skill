@@ -1,4 +1,4 @@
-# product-discovery-cagan
+# cagan-skill
 
 A Claude Code skill that encodes Marty Cagan / SVPG product development methodology — the frameworks from *INSPIRED*, *EMPOWERED*, and *TRANSFORMED* — so Claude can act as a diagnostic lens and generative toolkit for product strategy, team topology, discovery, and OKRs.
 

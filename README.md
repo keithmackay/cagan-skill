@@ -52,5 +52,4 @@ This is a personal skill project; feel free to fork and adapt it for your own us
 
 ## License
 
-> [!NOTE]
-> No license file is currently included. Add one (e.g. MIT) if you intend to share or redistribute this skill.
+[MIT](LICENSE)

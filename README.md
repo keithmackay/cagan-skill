@@ -10,17 +10,91 @@ A Claude Code skill that encodes Marty Cagan / SVPG product development methodol
 - **Copyable templates** — a Four Risks checklist and Opportunity Solution Tree template in `references/templates.md`, pulled in only when needed
 - **Staged-adoption aware** — coaches orgs that can't fully adopt empowered teams (agencies, early-stage startups, regulated industries) rather than treating the model as all-or-nothing
 
-## Getting Started
+## Installation
 
-This is a Claude Code skill, not a program you build or run — there's no install step beyond making it available to Claude Code.
-
-**Prerequisites**: [Claude Code](https://docs.claude.com/claude-code) with skill support.
-
-**Installation**: place this directory where Claude Code loads skills from (e.g. as a project-level skill under `.claude/skills/`, or as a personal skill under `~/.claude/skills/`), keeping `SKILL.md` and `references/templates.md` together.
+### Claude Code
 
 ```bash
-cp -r cagan-skill ~/.claude/skills/product-discovery-cagan
+cp -r /path/to/cagan-skill/ ~/.claude/skills/product-discovery-cagan/
 ```
+
+Or symlink:
+```bash
+ln -s /path/to/cagan-skill/ ~/.claude/skills/product-discovery-cagan
+```
+
+Then invoke by describing product-strategy, team-structure, discovery, or roadmap work — no explicit `/` command is needed; see Usage below.
+
+### Codex
+
+Place the plugin directory where Codex can find it, then add an entry to your marketplace:
+
+**`~/.agents/plugins/marketplace.json`** (create if absent):
+```json
+{
+  "name": "personal",
+  "interface": { "displayName": "Personal Plugins" },
+  "plugins": [
+    {
+      "name": "product-discovery-cagan",
+      "source": { "source": "local", "path": "/path/to/cagan-skill/" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}
+```
+
+### Antigravity
+
+**Global install** (all workspaces):
+```bash
+cp -r /path/to/cagan-skill/ ~/.gemini/antigravity/skills/product-discovery-cagan/
+```
+
+**Workspace install** (current project only):
+```bash
+cp -r /path/to/cagan-skill/ .agents/skills/product-discovery-cagan/
+```
+
+The root `SKILL.md` has no Claude Code-specific metadata, so it is used as-is — no separate Antigravity variant is needed.
+
+Skills are auto-discovered. You can also mention the skill by name to force activation.
+
+### Gemini CLI
+
+Gemini CLI installs extensions directly from GitHub:
+
+```bash
+gemini extensions install https://github.com/keithmackay/cagan-skill
+```
+
+To update:
+```bash
+gemini extensions update product-discovery-cagan
+```
+
+The skill is auto-discovered from `GEMINI.md` after installation.
+
+## Compatibility
+
+| Feature | Claude Code | Codex | Antigravity | Gemini CLI |
+|---------|:-----------:|:-----:|:-----------:|:----------:|
+| Core skill | ✅ | ✅ | ✅ | ✅ |
+| Sub-documents (`references/`) | ✅ | ✅ | ✅ | ✅ |
+
+No Claude Code-specific frontmatter (`metadata`, `retrieval`, `tags`) or subagent dispatch is used by this skill, so there are no platform gaps to document — it ports cleanly to all four platforms.
+
+Legend: ✅ Supported · ❌ Not supported
+
+## References
+
+- **Claude Code Skills:** https://code.claude.com/docs/en/skills
+- **Claude Code Complete Guide (PDF):** https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf
+- **Codex Plugins:** https://developers.openai.com/codex/plugins/build
+- **Antigravity Skills:** https://antigravity.google/docs/skills
+- **Gemini CLI Extensions:** https://github.com/google-gemini/gemini-cli/blob/main/docs/extension.md
+- **Agent Skills open standard:** https://agentskills.io/home
 
 ## Usage
 

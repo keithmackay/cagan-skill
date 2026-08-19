@@ -1,0 +1,6 @@
+{
+  "name": "product-discovery-cagan",
+  "version": "1.0.0",
+  "description": "Apply Marty Cagan / SVPG (Silicon Valley Product Group) product development methodology — the frameworks from \"INSPIRED,\" \"EMPOWERED,\" and \"TRANSFORMED.\"",
+  "skills": "./skills/"
+}

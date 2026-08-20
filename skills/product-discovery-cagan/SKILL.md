@@ -111,19 +111,7 @@ Desired Outcome (business/product metric)
 ```
 When helping a user structure discovery for a new initiative, build this tree with them: start from the outcome, surface opportunities from customer interviews/data (not from a features backlog), generate multiple competing solution ideas per opportunity, and attach a specific test to each.
 
-### Prototyping types (for testing before building)
-- **Feasibility prototype** — engineer-built, answers "can this be built"
-- **User prototype** — low-fidelity (paper, Figma), tests usability with real users, cheap to iterate
-- **Live-data prototype** — looks real, wired to real or realistic data, used for stakeholder/business viability tests and deeper usability tests
-- **Hybrid prototype** — combination, used for higher-stakes or more complex validation
-
-### Testing techniques
-- Value/demand testing: **fake door / smoke test**, **concierge test** (manually deliver the "product" to a few users), **Wizard of Oz test** (looks automated, isn't)
-- Usability testing: 5-user hallway/guerrilla tests are usually enough to find major issues (Nielsen's finding, which Cagan cites approvingly)
-- Feasibility: engineering spikes, technical prototypes
-- Business viability: run the idea past legal/finance/sales/marketing/exec stakeholders *early*, in discovery — not at launch review
-
-**Rule of thumb to apply**: discovery should run on the order of days, not months. If a user describes a discovery process taking a quarter, flag that the point of these techniques is speed — cheap, fast, disconfirming tests, not a parallel mini-project.
+For prototyping types and testing techniques mapped to each risk, see the "Prototyping Types & Testing Techniques Reference" section in `references/templates.md`. Rule of thumb: discovery should run on the order of days, not months — if a user describes a discovery process taking a quarter, flag that the point of these techniques is speed, not a parallel mini-project.
 
 ## 5. Outcomes over Output: OKRs
 
@@ -151,20 +139,7 @@ If the request is about managing/coaching PMs, designers, or a product org:
 
 ## 7. Common Anti-Patterns to Flag
 
-Actively watch for and name these, since users often don't realize they're symptoms of the same underlying issue:
-- Roadmaps that are lists of features with ship dates ("date-driven roadmap")
-- Sales-driven or stakeholder-driven backlogs ("just build what the biggest customer/loudest exec asked for")
-- Engineers brought in only after the spec is "done"
-- PMs functioning as requirement-gatherers / Jira administrators rather than discoverers of value
-- Success measured by "did we ship X" rather than "did metric Y move"
-- Discovery skipped entirely, or done as a slow, heavyweight, months-long parallel project rather than fast/cheap/continuous
-- Reorgs around projects instead of durable missions (project teams disbanded after shipping, so no one owns outcomes)
-- RICE/weighted-scoring prioritization applied to a features list, when the deeper fix is to stop generating a features list at all and instead assign problems
-
-**Context matters — don't apply these as unqualified rules:**
-- **Platform/infrastructure teams** have no direct external customer; treat other internal teams and their APIs/systems as "the customer" for value and usability risk, rather than concluding discovery doesn't apply.
-- **Regulated industries** (healthcare, finance, etc.) legitimately have more **committed** OKRs and mandatory compliance gates than the norm — business viability risk dominates there by design, not as a sign of dysfunction.
-- **B2B/enterprise sales-led motions**: healthy input from sales (a real prospect's blocking requirement, a pattern across many deals) is not the same anti-pattern as "build whatever the loudest exec/biggest customer asked for." Distinguish the two before flagging a stakeholder-driven backlog.
+Actively watch for and name these, since users often don't realize they're symptoms of the same underlying issue — see the "Anti-Pattern Checklist" section in `references/templates.md` for the full list plus context caveats (platform teams, regulated industries, B2B sales-led motions) for when these don't apply as unqualified rules.
 
 ## 8. How to Apply This Skill in Practice
 

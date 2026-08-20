@@ -13,6 +13,12 @@ Use this skill both as a **diagnostic lens** (is this team/org doing this well o
 
 For what this skill is, when it fires, and how to install/reference it, see `README.md` — this file is Claude's operating content, not a setup guide.
 
+## Flags
+
+### `--help`
+
+If the user invokes this skill with a `--help` flag (e.g. `/product-discovery-cagan --help`), do not apply the methodology. Instead, read and display the contents of `help.md` (in this skill's folder) verbatim, then stop.
+
 ## Contents
 
 1. [The Core Distinction: Feature Teams vs. Empowered Teams](#1-the-core-distinction-feature-teams-vs-empowered-teams)

@@ -124,6 +124,10 @@ This is a documentation/prompt-content project — no build, test, or lint tooli
 
 This is a personal skill project; feel free to fork and adapt it for your own use. If proposing changes, keep the source-of-truth split intact: operating instructions in `SKILL.md`, situational reference material in `references/`.
 
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for release history.
+
 ## License
 
 [MIT](LICENSE)

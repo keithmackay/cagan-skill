@@ -1,5 +1,5 @@
 ---
-name: product-discovery-cagan
+name: marty-caganize
 description: Apply Marty Cagan / SVPG (Silicon Valley Product Group) product development methodology — the frameworks from "INSPIRED," "EMPOWERED," and "TRANSFORMED." Use this skill whenever the user is working on product strategy, product vision, team topology/structure, product discovery, writing or reviewing a product roadmap, evaluating whether a team is "empowered" vs a "feature team," setting OKRs for a product org, coaching product managers, running discovery on a new opportunity, de-risking a feature (value/usability/feasibility/business viability), building an opportunity solution tree, designing prototypes or tests for a product idea, or assessing/transforming a product organization's operating model. Trigger even if the user doesn't say "Cagan" by name — e.g. "how should we structure our product teams," "we keep shipping features nobody uses," "help me write our product strategy," "our roadmap is just a list of features," "how do I coach this PM," "what should we prototype before building this."
 ---
 
@@ -17,14 +17,14 @@ For what this skill is, when it fires, and how to install/reference it, see `REA
 
 ### `--help`
 
-If the user invokes this skill with a `--help` flag (e.g. `/product-discovery-cagan --help`), do not apply the methodology. Instead, read and display the contents of `help.md` (in this skill's folder) verbatim, then stop.
+If the user invokes this skill with a `--help` flag (e.g. `/marty-caganize --help`), do not apply the methodology. Instead, read and display the contents of `help.md` (in this skill's folder) verbatim, then stop.
 
 ### `--version`
 
-If the user invokes this skill with a `--version` flag (e.g. `/product-discovery-cagan --version`), do not run the workflow. Instead:
+If the user invokes this skill with a `--version` flag (e.g. `/marty-caganize --version`), do not run the workflow. Instead:
 
 1. Read the installed version from this skill's own manifest: `.claude-plugin/plugin.json` if present, else `.codex-plugin/plugin.json`, else `gemini-extension.json` — whichever exists for this platform install. If none exist (a bare Claude Code skill with only SKILL.md), read the topmost version heading in `CHANGELOG.md` instead.
-2. Print: `product-discovery-cagan v<installed-version>`
+2. Print: `marty-caganize v<installed-version>`
 3. Best-effort update check — determine this skill's GitHub source repo:
    a. If `.git` exists here and `git remote get-url origin` resolves to a `github.com` URL, use that `owner/repo`.
    b. Otherwise, search this skill's own `README.md` for the first `https://github.com/<owner>/<repo>` URL and use that.

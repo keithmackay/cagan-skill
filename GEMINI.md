@@ -1,2 +1,2 @@
-@./skills/product-discovery-cagan/SKILL.md
-@./skills/product-discovery-cagan/references/templates.md
+@./skills/marty-caganize/SKILL.md
+@./skills/marty-caganize/references/templates.md

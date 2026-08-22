@@ -6,6 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ## [Unreleased]
 
+- Rename skill from product-discovery-cagan to marty-caganize throughout (folder, invocation, manifests, README)
 - Add --version flag support, reporting installed version and a best-effort GitHub update check
 - Add Changelog section to README linking CHANGELOG.md
 - Add --help flag convention (help.md)
@@ -14,8 +15,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ## [1.0.0] - 2026-08-19
 
-- Initial commit: product-discovery-cagan skill
-- Rename README title to cagan-skill
+- Initial commit: marty-caganize skill
+- Rename README title to marty-caganize
 - Add MIT LICENSE
-- Port product-discovery-cagan skill to Codex and Gemini CLI, document install/compatibility
+- Port marty-caganize skill to Codex and Gemini CLI, document install/compatibility
 

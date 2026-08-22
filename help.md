@@ -1,4 +1,4 @@
-product-discovery-cagan — apply Marty Cagan/SVPG product methodology (INSPIRED/EMPOWERED/TRANSFORMED)
+marty-caganize — apply Marty Cagan/SVPG product methodology (INSPIRED/EMPOWERED/TRANSFORMED)
 
 WHAT IT DOES
   Applies the operating model from Marty Cagan's INSPIRED, EMPOWERED,
@@ -20,7 +20,7 @@ USAGE
   artifact — the skill activates automatically. No explicit invocation
   syntax is required.
 
-  /product-discovery-cagan --help   Show this message and exit
+  /marty-caganize --help   Show this message and exit
 
 FLAGS
   --help    Show this help message without making any changes

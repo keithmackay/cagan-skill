@@ -1,4 +1,4 @@
-# cagan-skill
+# marty-caganize
 
 A Claude Code skill that encodes Marty Cagan / SVPG product development methodology — the frameworks from *INSPIRED*, *EMPOWERED*, and *TRANSFORMED* — so Claude can act as a diagnostic lens and generative toolkit for product strategy, team topology, discovery, and OKRs.
 
@@ -15,12 +15,12 @@ A Claude Code skill that encodes Marty Cagan / SVPG product development methodol
 ### Claude Code
 
 ```bash
-cp -r /path/to/cagan-skill/ ~/.claude/skills/product-discovery-cagan/
+cp -r /path/to/marty-caganize/ ~/.claude/skills/marty-caganize/
 ```
 
 Or symlink:
 ```bash
-ln -s /path/to/cagan-skill/ ~/.claude/skills/product-discovery-cagan
+ln -s /path/to/marty-caganize/ ~/.claude/skills/marty-caganize
 ```
 
 Then invoke by describing product-strategy, team-structure, discovery, or roadmap work — no explicit `/` command is needed; see Usage below.
@@ -36,8 +36,8 @@ Place the plugin directory where Codex can find it, then add an entry to your ma
   "interface": { "displayName": "Personal Plugins" },
   "plugins": [
     {
-      "name": "product-discovery-cagan",
-      "source": { "source": "local", "path": "/path/to/cagan-skill/" },
+      "name": "marty-caganize",
+      "source": { "source": "local", "path": "/path/to/marty-caganize/" },
       "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
       "category": "Productivity"
     }
@@ -49,12 +49,12 @@ Place the plugin directory where Codex can find it, then add an entry to your ma
 
 **Global install** (all workspaces):
 ```bash
-cp -r /path/to/cagan-skill/ ~/.gemini/antigravity/skills/product-discovery-cagan/
+cp -r /path/to/marty-caganize/ ~/.gemini/antigravity/skills/marty-caganize/
 ```
 
 **Workspace install** (current project only):
 ```bash
-cp -r /path/to/cagan-skill/ .agents/skills/product-discovery-cagan/
+cp -r /path/to/marty-caganize/ .agents/skills/marty-caganize/
 ```
 
 The root `SKILL.md` has no Claude Code-specific metadata, so it is used as-is — no separate Antigravity variant is needed.
@@ -66,12 +66,12 @@ Skills are auto-discovered. You can also mention the skill by name to force acti
 Gemini CLI installs extensions directly from GitHub:
 
 ```bash
-gemini extensions install https://github.com/keithmackay/cagan-skill
+gemini extensions install https://github.com/keithmackay/marty-caganize
 ```
 
 To update:
 ```bash
-gemini extensions update product-discovery-cagan
+gemini extensions update marty-caganize
 ```
 
 The skill is auto-discovered from `GEMINI.md` after installation.
